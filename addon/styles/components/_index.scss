@@ -1,11 +1,14 @@
-@if $include-element-css {
-  @import 'grid';
-  @import 'box';
-  @import 'centered';
-  @import 'hbox';
-  @import 'page';
-  @import 'screen';
-  @import 'vbox';
-  @import 'container';
-  @import 'fill';
-}
+// For now, unconditionally include CSS, due to an underlying issue:
+// https://github.com/react-toolbox/react-toolbox/issues/466
+// https://github.com/runspired/flexi/issues/52
+//
+// @if $include-element-css {
+@import 'grid';
+@import 'box';
+@import 'centered';
+@import 'hbox';
+@import 'page';
+@import 'screen';
+@import 'vbox';
+@import 'container';
+@import 'fill';
